@@ -1,1 +1,222 @@
-hello world!
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Reynante Matias - Professional Resume</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "text-light": "#111318",
+                        "text-dark": "#f0f2f4",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2230",
+                        "border-light": "#e5e7eb",
+                        "border-dark": "#374151"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+    <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4 md:px-0">
+                    <header
+                        class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-border-light dark:border-border-dark px-4 sm:px-10 py-3 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+                        <div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+                            <div class="size-5">
+                                <svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Reynante Matias</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#about">About</a>
+                                <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#experience">Experience</a>
+                                <!-- <a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary"
+                                    href="#projects">Projects</a> -->
+                            </div>
+                            <a href="https://drive.google.com/file/d/1KmaKGPECSlucniKVaaIR3_FajUEnTmcv/view?usp=sharing" target="_blank">
+                                <button
+                                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                    <span class="truncate">Download Resume</span>
+                                </button>
+                            </a>
+                        </div>
+                    </header>
+                    <main class="flex flex-col gap-12 sm:gap-16">
+                        <section class="flex p-4 @container mt-12 sm:mt-20" id="hero">
+                            <div class="flex w-full flex-col gap-6 items-center text-center">
+                                <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                                    data-alt="Professional headshot of John Doe"
+                                    style='background-image: url("/images/DSCF1143.JPG");'>
+                                </div>
+                                <div class="flex flex-col items-center justify-center gap-2">
+                                    <h1 class="text-[32px] sm:text-[40px] font-bold leading-tight tracking-[-0.015em]">
+                                        Reynante Matias</h1>
+                                    <p class="text-lg sm:text-xl text-text-light/80 dark:text-text-dark/80">Software
+                                        Developer</p>
+                                    <!-- <p
+                                        class="max-w-xl text-base font-normal leading-normal text-text-light/60 dark:text-text-dark/60">
+                                        Passionate about building scalable web applications and creating intuitive user
+                                        experiences that delight users.
+                                    </p> -->
+                                </div>
+                                <div class="flex w-full max-w-sm flex-col sm:flex-row gap-3">
+                                    <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/10 dark:bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] flex-1 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+                                        href="https://www.linkedin.com/in/reynantematias/">
+                                        <span class="truncate">LinkedIn</span>
+                                    </a>
+                                    <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 hover:bg-primary/90 transition-colors"
+                                        href="https://github.com/reymatias">
+                                        <span class="truncate">GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="px-4" id="about">
+                            <h2 class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">About Me</h2>
+                            <p
+                                class="text-base font-normal leading-relaxed text-text-light/80 dark:text-text-dark/80 pt-1">
+                                Currently an Application Developer for County of Tulare with a B.S. in Computer Science
+                                and Engineering from the University of California, Merced. Background includes software
+                                development, computer software and hardware troubleshooting, and enterprise mobile
+                                device and system administration.
+                            </p>
+                        </section>
+                        <section class="px-4" id="experience">
+                            <h2 class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Experience
+                            </h2>
+                            <div
+                                class="mt-4 flex flex-col gap-8 border-l-2 border-border-light dark:border-border-dark pl-6">
+                                <div class="relative flex flex-col gap-2">
+                                    <div class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-primary"></div>
+                                    <p class="text-sm font-medium text-text-light/60 dark:text-text-dark/60">2019 -
+                                        Present</p>
+                                    <h3 class="text-lg font-bold">IT Programmer Analyst II, County of Tulare</h3>
+                                    <!-- <p class="text-base text-text-light/80 dark:text-text-dark/80">Reviews user/software requirements and performs analysis, design, implementation, installation and training related to new software developed and/or acquired.</p>
+                                    <p class="text-base text-text-light/80 dark:text-text-dark/80">Develops data bases, programs and procedures necessary to integrate and/or implement the system and tests system fully to determine its operational reliability.</p>
+                                    <p class="text-base text-text-light/80 dark:text-text-dark/80">Develops, modifies and maintains complex programs; monitors the operations of assigned programs; responses to problems by diagnosing and correcting errors in logic and coding.</p> -->
+                                </div>
+                                <div class="relative flex flex-col gap-2">
+                                    <div
+                                        class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-border-light dark:bg-border-dark border-4 border-background-light dark:border-background-dark">
+                                    </div>
+                                    <p class="text-sm font-medium text-text-light/60 dark:text-text-dark/60">2018 - 2019
+                                    </p>
+                                    <h3 class="text-lg font-bold">IT System Technician, County of Tulare</h3>
+                                    <!-- <p class="text-base text-text-light/80 dark:text-text-dark/80">Developed and
+                                        maintained features for a large-scale e-commerce platform. Collaborated with
+                                        designers and product managers to translate requirements into functional and
+                                        appealing web applications.</p> -->
+                                </div>
+                                <div class="relative flex flex-col gap-2">
+                                    <div
+                                        class="absolute -left-[33px] top-1 h-4 w-4 rounded-full bg-border-light dark:bg-border-dark border-4 border-background-light dark:border-background-dark">
+                                    </div>
+                                    <p class="text-sm font-medium text-text-light/60 dark:text-text-dark/60">2016 - 2018
+                                    </p>
+                                    <h3 class="text-lg font-bold">IT Desktop Technician II, County of Tulare</h3>
+                                    <!-- <p class="text-base text-text-light/80 dark:text-text-dark/80">Assisted in building
+                                        and maintaining client websites using HTML, CSS, and JavaScript. Gained
+                                        foundational experience in version control with Git and agile development
+                                        methodologies.</p> -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <section class="px-4" id="projects">
+                            <h2 class="text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3 pt-5">Projects</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                <div
+                                    class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+                                    <div class="flex justify-between items-start">
+                                        <h3 class="text-lg font-bold">Project Alpha</h3>
+                                        <a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors"
+                                            href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                                    </div>
+                                    <p class="text-base text-text-light/80 dark:text-text-dark/80">A web-based project
+                                        management tool designed for small teams, featuring real-time collaboration and
+                                        task tracking.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">React</span>
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Node.js</span>
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Firebase</span>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+                                    <div class="flex justify-between items-start">
+                                        <h3 class="text-lg font-bold">DataViz Dashboard</h3>
+                                        <a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors"
+                                            href="#"><span class="material-symbols-outlined">open_in_new</span></a>
+                                    </div>
+                                    <p class="text-base text-text-light/80 dark:text-text-dark/80">An interactive
+                                        dashboard for visualizing complex datasets, built with D3.js and integrated with
+                                        a Python backend.</p>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">D3.js</span>
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Python</span>
+                                        <span
+                                            class="rounded-full bg-primary/10 dark:bg-primary/20 px-3 py-1 text-xs font-medium text-primary">Flask</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section> -->
+                    </main>
+                    <footer
+                        class="mt-16 sm:mt-24 border-t border-solid border-border-light dark:border-border-dark px-4 sm:px-10 py-6 text-center text-sm text-text-light/60 dark:text-text-dark/60">
+                        <p>© 2025 Reynante Matias. All rights reserved.</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
